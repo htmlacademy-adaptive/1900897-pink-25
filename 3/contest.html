@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Конкурс</title>
+  <base href="https://htmlacademy-adaptive.github.io/1900897-pink-25/3/">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="header__logo logo">
+      <img class="logo logo--small" src="./img/logo--small.svg" width="74" height="23" alt="Логотип приложения «Пинк».">
+    </a>
+    <nav class="header__navigation navigation">
+      <button class="navigation__toggle" type="button">
+        <span>=</span>
+      </button>
+      <div class="navigation__container">
+        <ul class="navigation__menu menu">
+          <li class="menu__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item--active">Конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a href="https://up.htmlacademy.ru/adaptive/25">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="form-page">
+    <h1 class="form-page__title visually-hidden">Заполните форму для участия в конкурсе</h1>
+    <p class="form-page__description">Конкурс на самое безбашенное путешествие с Пинк</p>
+    <form class="form-page__form form" method="post" action="https://echo.htmlacademy.ru">
+      <p class="form__purpose">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+
+      <section class="form__user-name user-name">
+        <h2 class="user-name__title visually-hidden">Имя участника</h2>
+        <p class="user-name__info user-info">
+          <label for="user-info__surname">Фамилия:</label>
+          <input type="text" name="user-surname" placeholder="Укажите фамилию*" id="user-info__surname" required autofocus>
+        </p>
+        <p class="user-name__info user-info">
+          <label for="user-info__name">Имя:</label>
+          <input type="text" name="user-name" placeholder="Введите ваше имя*" id="user-info__name" required>
+        </p>
+        <p class="user-name__info user-info">
+          <label for="user-info__patronymic">Отчество:</label>
+          <input type="text" name="user-patronymic" placeholder="Ну и отчество тоже" id="user-info__patronymic">
+        </p>
+      </section>
+
+      <section class="form__filter filter">
+        <h2 class="filter__title visually-hidden">Ваши достижения</h2>
+        <fieldset class="filter__conteiner">
+          <legend class="filter__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="filter__list">
+            <li class="flilter__item">
+              <input type="checkbox" name="selfie-with-shark" id="filter-selfie-with-shark" checked>
+              <label for="filter-selfie-with-shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="filter__item">
+              <input type="checkbox" name="burned-on-beach" id="filter-burned-on-beach" checked>
+              <label for="filter-burned-on-beach">Обгорел на пляже</label>
+            </li>
+            <li class="filter__item">
+              <input type="checkbox" name="saw-chuck-norris" id="filter-saw-chuck-norris">
+              <label for="filter-saw-chuck-norris">Видел Чака Норриса</label>
+            </li>
+            <li class="filter__item">
+              <input type="checkbox" name="bought-souvenirs" id="filter-bought-souvenirs">
+              <label for="filter-bought-souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="filter__item">
+              <input type="checkbox" name="held-tower" id="filter-held-tower" checked>
+              <label for="filter-held-tower">Удержал башню</label>
+            </li>
+            <li class="filter__item">
+              <input type="checkbox" name="trashed-hotel" id="filter-trashed-hotel">
+              <label for="filter-trashed-hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+
+      <section class="form__user-contacts user-contacts">
+        <h2 class="user-contacts__title visually-hidden">Ваши контакты</h2>
+        <fieldset class="user-contacts__conteiner">
+          <legend class="user-contacts__legend">Контактная информация</legend>
+          <p class="user-contacts__info user-info user-info--phone">
+            <label for="user-info__phone">Номер телефона</label>
+            <input type="tel" name="user-surname" placeholder="Номер, пожалуйста" id="user-info__phone">
+          </p>
+          <p class="user-contacts__info user-info user-info--mail">
+            <label for="user-info__mail">Адрес почты</label>
+            <input type="email" pattern="^[A-Za-z0-9\_.%+-]+@[A-Za-z0-9\.-]+\.[a-z]{2, 4}$" name="user-surname" placeholder="Введите почту*" id="user-info__mail" required>
+          </p>
+        </fieldset>
+      </section>
+
+      <section class="form__radio radio-device">
+        <h2 class="radio-device__title visually-hidden"></h2>
+        <fieldset class="radio-device__conteiner">
+          <legend class="radio-device__legend">С каким приложением путешествовали?</legend>
+          <ul class="radio-device__list">
+            <li class="radio-device__item">
+              <input  type="radio" value="ios" name="device-type" id="device-ios" checked>
+              <label for="device-ios">Pink для iOS</label>
+            </li>
+            <li class="radio-device__item">
+              <input  type="radio" value="android" name="device-type" id="device-android">
+              <label for="device-android">Pink на Android</label>
+            </li>
+            <li class="radio-device__item">
+              <input  type="radio" value="windows" name="device-type" id="device-windows">
+              <label for="device-windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+
+      <section class="form__field field">
+        <h2 class="field__title visually-hidden">Ваши комментарии</h2>
+        <fieldset class="field__conteiner">
+          <legend class="field__legend">Опишите свои эмоции</legend>
+          <textarea name="field__comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+      </section>
+
+      <section class="form__submit submit">
+        <p class="submit__button">
+          <button class="button" type="submit">Отправить форму</button>
+        </p>
+        <p class="submit__note">* &mdash; обязательные поля</p>
+      </section>
+    </form>
+
+    <section class="form-page__popup popup-error">
+      <h2 class="popup-error__title">Что-то пошло не так!</h2>
+      <p class="popup-error__prompt">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button">ок</button>
+    </section>
+
+    <section class="form-page__popup popup-confirm">
+      <h2 class="popup-confirm__title">Ваша заявка отправлена</h2>
+      <p class="popup-confirm__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button class="button">Закрыть окно</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo logo">
+      <a href="#">
+        <img class="logo logo--middle" src="./img/logo--middle.svg" width="74" height="23" alt="Логотип приложения «Пинк».">
+      </a>
+    </div>
+    <div class="footer__sotial sotial">
+      <ul class="sotial__list">
+        <li class="sotial__item">
+          <a class="sotial__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"><img src="./img/vk.svg" alt="Мы в контакте."></a>
+        </li>
+        <li class="sotial__item">
+          <a class="sotial__link social__link--telegram" href="#" target="_blank"><img src="./img/telegram.svg" alt="Мы в Телеграмме."></a>
+        </li>
+        <li class="sotial__item">
+          <a class="sotial__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank"><img src="./img/youtube.svg" alt="Мы в Ютубе."></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright copyright">
+      <span class="copyright__text">Разработано</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <img src="./img/html-academy.svg" alt="Логотип «HTML Academy» разработчика сайта.">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
