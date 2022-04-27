@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фотографии</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="favicon.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1900897-pink-25/7/">
+</head>
+
+<body class="page">
+  <header class="page__header header">
+    <a href="index.html" class="header__logo logo">
+      <img class="logo logo--small" src="./img/logo--small.svg" width="74" height="23" alt="Логотип приложения «Пинк».">
+    </a>
+    <nav class="header__navigation navigation">
+      <div class="navigation__toggle">
+        <span></span>
+      </div>
+      <div class="navigation__container">
+        <ul class="navigation__menu menu">
+          <li class="menu__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu__item menu__item--active">
+            <a>Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a href="contest.html">Конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a href="https://up.htmlacademy.ru/adaptive/25">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page__main gallery-page">
+    <div class="gallery-page__top">
+      <h1 class="gallery-page__title">Фотографии пользователей</h1>
+    </div>
+    <section class="gallery-page__photo gallery">
+      <h2 class="gallery-page__subtitle visually-hidden">Галерея</h2>
+      <p class="gallery-page__appeal">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <div class="gallery__container">
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--panorama photo">
+            <picture>
+              <source srcset="img/gallery-panorama-desktop.jpg 1x, img/gallery-panorama-desktop-2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+              <source srcset="img/gallery-panorama-tablet.jpg 1x, img/gallery-panorama-tsblet-2x.jpg 2x" type="image/jpg" media="(min-width: 660px)">
+              <img class="photo__picture" src="img/gallery-panorama-mobile.jpg" srcset="img/gallery-panorama-mobile-2x.jpg 2x" alt="Фото с панорамным видом на лесной холм.">
+            </picture>
+            <h3 class="photo__author">Анна <small class="photo__posting-time">(5 минут назад)</small></h3>
+            <p class="photo__comment">Прыгать или нет? Напишите в	комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo__like">Нравится: <span class="photo__like-number">215</span></p>
+          </li>
+          <li class="gallery__item photo">
+            <picture>
+              <source srcset="img/gallery-tripod-desctop.jpg 1x, img/gallery-tripod-desctop-2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+              <source srcset="img/gallery-tripod-tablet.jpg 1x, img/gallery-tripod-tablet-2x.jpg 2x" type="image/jpg" media="(min-width: 660px)">
+              <img class="photo__picture" src="img/gallery-tripod-mobile.jpg" srcset="img/gallery-tripod-mobile-2x.jpg 2x" alt="Фото штатива с камерой направленной на белую машину.">
+            </picture>
+            <h3 class="photo__author">Левон <small class="photo__posting-time">(5 часов назад)</small></h3>
+            <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photo__like">Нравится: <span class="photo__like-number">356</span></p>
+          </li>
+          <li class="gallery__item photo">
+            <picture>
+              <source srcset="img/gallery-drums-desctop.jpg 1x, img/gallery-drums-desctop-2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+              <source srcset="img/gallery-drums-tablet.jpg 1x, img/gallery-drums-tablet-2x.jpg 2x" type="image/jpg" media="(min-width: 660px)">
+              <img class="photo__picture" src="img/gallery-drums-mobile.jpg" srcset="img/gallery-drums-mobile-2x.jpg 2x" alt="Фото барабанной установки.">
+            </picture>>
+            <h3 class="photo__author">Антон <small class="photo__posting-time">(12 часов назад)</small></h3>
+            <p class="photo__comment">Соседи будут рады!</p>
+            <p class="photo__like">Нравится: <span class="photo__like-number">666</span></p>
+          </li>
+          <li class="gallery__item photo">
+            <picture>
+              <source srcset="img/gallery-skyscraper-desctop.jpg 1x, img/gallery-skyscraper-desctop-2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+              <source srcset="img/gallery-skyscraper-tablet.jpg 1x, img/gallery-skyscraper-tablet-2x.jpg 2x" type="image/jpg" media="(min-width: 660px)">
+              <img class="photo__picture" src="img/gallery-skyscraper-mobile.jpg" srcset="img/gallery-skyscraper-mobile-2x.jpg 2x" alt="Фото вида из-под застекленной крыши на удаляющиеся ввысь небоскрёбы и небо.">
+            </picture>
+            <h3 class="photo__author">Борис <small class="photo__posting-time">(20 часов назад)</small></h3>
+            <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo__like">Нравится: <span class="photo__like-number">215</span></p>
+          </li>
+          <li class="gallery__item photo">
+            <picture>
+              <source srcset="img/gallery-melon-desctop.jpg 1x, img/gallery-melon-desctop-2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+              <source srcset="img/gallery-melon-tablet.jpg 1x, img/gallery-melon-tablet-2x.jpg 2x" type="image/jpg" media="(min-width: 660px)">
+              <img class="photo__picture" src="img/gallery-melon-mobile.jpg" srcset="img/gallery-melon-mobile-2x.jpg 2x" alt="Фото продажи овощей и фруктов Кубанской бахчи в поле под навесом.">
+            </picture>
+            <h3 class="photo__author">Сергей <small class="photo__posting-time">(25 часов назад)</small></h3>
+            <p class="photo__comment">Самая кубанская в мире!</p>
+            <p class="photo__like">Нравится: <span class="photo__like-number">4</span></p>
+          </li>
+          <li class="gallery__item photo">
+            <picture>
+              <source srcset="img/gallery-landscape-desctop.jpg 1x, img/gallery-landscape-desctop-2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+              <source srcset="img/gallery-landscape-tablet.jpg 1x, img/gallery-landscape-tablet-2x.jpg 2x" type="image/jpg" media="(min-width: 660px)">
+              <img class="photo__picture" src="img/gallery-landscape-mobile.jpg" srcset="img/gallery-landscape-mobile-2x.jpg 2x" alt="Фото с видом сверху на скалистую местность, в кадре заметна нижняя часть фотографа в шортах.">
+            </picture>
+            <h3 class="photo__author">Максим <small class="photo__posting-time">(40 часов назад)</small></h3>
+            <p class="photo__comment">Где снег-то?</p>
+            <p class="photo__like">Нравится: <span class="photo__like-number">150</span></p>
+          </li>
+          <li class="gallery__item photo">
+            <picture>
+              <source srcset="img/gallery-airwing-desctop.jpg 1x, img/gallery-airwing-desctop-2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+              <source srcset="img/gallery-airwing-tablet.jpg 1x, img/gallery-airwing-tablet-2x.jpg 2x" type="image/jpg" media="(min-width: 660px)">
+              <img class="photo__picture" src="img/gallery-airwing-mobile.jpg" srcset="img/gallery-airwing-mobile-2x.jpg 2x" alt="Фото крыла самолета с ярким Солнцем и множественными бликами.">
+            </picture>
+            <h3 class="photo__author">Надежда <small class="photo__posting-time">(45 часов назад)</small></h3>
+            <p class="photo__comment">Всем GM и взаимные лайки!</p>
+            <p class="photo__like">Нравится: <span class="photo__like-number">2560</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="gallery-page__posting posting">
+      <h2 class="visually-hidden">Обработка вашей фотографии</h2>
+      <p class="gallery-page__appeal">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="posting__container">
+        <div class="posting__upload">
+          <picture>
+            <source srcset="img/posting-photo-desctop.jpg 1x, img/posting-photo-desctop-2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+            <source srcset="img/posting-photo-tablet.jpg 1x, img/posting-photo-tablet-2x.jpg 2x" type="image/jpg" media="(min-width: 660px)">
+            <img class="posting__photo" src="img/posting-photo-mobile.jpg" srcset="img/posting-photo-mobile-2x.jpg 2x" alt="Загруженное вами фото">
+          </picture>
+        </div>
+        <div class="posting__filter photo-filter">
+          <ul class="photo-filter__list">
+            <li class="photo-filter__item">
+              <input class="photo-filter__crop" type="radio" name="processing" value="crop" aria-label="Шкала для обрезки изображения" checked>
+              <div class="photo-filter__range-slider"><span class="photo-filter__active-segment"></span></div>
+            </li>
+            <li class="photo-filter__item">
+              <input class="photo-filter__fill" type="radio" name="processing" value="fill" aria-label="Шкала для заливки изображения">
+              <div class="photo-filter__range-slider"><span class="photo-filter__active-segment"></span></div>
+            </li>
+            <li class="photo-filter__item">
+              <input class="photo-filter__brightness" type="radio" name="processing" value="brightness" aria-label="Шкала яркости изображения">
+              <div class="photo-filter__range-slider"><span class="photo-filter__active-segment"></span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="posting__send">
+          <button class="button button--upload" type="submit">Запостить</button>
+          <button class="button button--upload" type="button" disabled>Отмена</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page__footer footer">
+    <div class="footer__logo logo">
+      <a href="#">
+        <img class="logo logo--middle" src="./img/logo--middle.svg" width="74" height="23" alt="Логотип приложения «Пинк».">
+      </a>
+    </div>
+    <div class="footer__sotial sotial">
+      <ul class="sotial__list">
+        <li class="sotial__item">
+          <a class="sotial__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank"><img src="./img/vk.svg" alt="Мы в контакте."></a>
+        </li>
+        <li class="sotial__item">
+          <a class="sotial__link social__link--telegram" href="#" target="_blank"><img src="./img/telegram.svg" alt="Мы в Телеграмме."></a>
+        </li>
+        <li class="sotial__item">
+          <a class="sotial__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank"><img src="./img/youtube.svg" alt="Мы в Ютубе."></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright copyright">
+      <span class="copyright__text">Разработано</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <img src="./img/html-academy.svg" alt="Логотип «HTML Academy» разработчика сайта.">
+      </a>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
