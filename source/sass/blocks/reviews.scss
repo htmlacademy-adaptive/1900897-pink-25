@@ -52,7 +52,7 @@
 
 .reviews__user::before {
   @media (min-width: $desktop) {
-    content: url("img/quotes.svg");
+    content: url("../img/quotes.svg");
     position: absolute;
     top: 54px;
   }
