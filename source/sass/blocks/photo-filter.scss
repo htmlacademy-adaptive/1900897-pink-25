@@ -44,8 +44,9 @@
       height: 1px;
       display: block;
       position: relative;
-      bottom: -25px;
+      bottom: -21px;
       background-color: hsl(211, 27%, 21%, 0.1);
+      box-shadow: 1px 72px 0 hsl(211, 27%, 21%, 0.1);
     }
   }
 
@@ -64,26 +65,11 @@
   @media (min-width: $tablet) {
     margin-top: 0;
     margin-bottom: 23px;
-
-    &::after {
-      content: "";
-      width: 275px;
-      height: 1px;
-      display: block;
-      position: relative;
-      bottom: -23px;
-      background-color: hsl(211, 27%, 21%, 0.1);
-    }
   }
 
   @media (min-width: $desktop) {
     margin-top: 15px;
     margin-bottom: 14px;
-
-    &::after {
-      width: 410px;
-      bottom: 0;
-    }
   }
 }
 

@@ -7,6 +7,9 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="favicon.webmanifest">
+  <link rel="preload" href="../fonts/opensans-3.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/opensanslight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -175,16 +178,16 @@
           <h2 class="form-field__title">Опишите свои эмоции</h2>
             <fieldset class="form-field__container">
             <legend class="form-field__legend visually-hidden">Опишите свои эмоции</legend>
-            <textarea class="form-field__comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" cols="27" rows="6"></textarea>
+            <label class="visually-hidden" for="impression">Опишите ваши впечатления</label>
+            <textarea class="form-field__comment" name="comment" id="impression" placeholder="Можно прям в красках, не стесняясь в выражениях" cols="27" rows="6"></textarea>
           </fieldset>
         </div>
       </section>
 
       <div class="form__submit">
         <button class="form__button button button--form" type="submit">Отправить форму</button>
-        <p class="form__note"><sup>*</sup> &mdash; обязательные<span class="form__note--desctop"> для заполнения</span> поля</p>
+        <p class="form__note"><sup>*</sup> &mdash; обязательные<span> для заполнения</span> поля</p>
       </div>
-
     </form>
 
     <div class="form-page__popup popup popup__content--error visually-hidden">
@@ -253,7 +256,6 @@
       </a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
-
 </html>

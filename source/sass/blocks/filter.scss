@@ -62,10 +62,9 @@
   list-style-type: none;
 
   @media (min-width: $desktop) {
-    max-width: 940px;
     margin: 0 auto;
     display: grid;
-    grid-template: 80px 80px / 1fr 1fr 1fr;
+    grid-template: minmax(80px, 1fr) minmax(80px, 1fr) / 1fr 1fr 1fr;
     column-gap: 50px;
   }
 }

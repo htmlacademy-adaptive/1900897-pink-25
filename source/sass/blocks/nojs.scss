@@ -4,15 +4,32 @@
   flex-direction: column;
   background-color: $slider-color;
   padding: 0;
+
+  @media (min-width: $desktop) {
+    height: 110px;
+    position: absolute;
+    background-color: transparent;
+    flex-direction: row;
+    padding: 0 130px;
+    border-bottom: 1px solid transparent;
+  }
 }
 
 .nojs .header__logo {
   margin: 22px 0 0 20px;
   align-self: flex-start;
+
+  @media (min-width: $desktop) {
+    margin: 22px 0 0 0;
+  }
 }
 
 .nojs .header__navigation {
   width: 100%;
+
+  @media (min-width: $desktop) {
+    width: 620px;
+  }
 }
 
 .nojs .navigation__toggle {
@@ -25,10 +42,20 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .nojs .menu__item {
   text-align: center;
+}
+
+.nojs .menu__item:last-child {
+  @media (min-width: $tablet) {
+    background-color: $slider-color;
+  }
 }
 
 .nojs .navigation::before {
@@ -37,4 +64,27 @@
   display: block;
   border-top: 1px solid hsl(0, 0%, 0%);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $desktop) {
+    content: none;
+  }
+}
+
+.nojs > .contact__googlemap {
+  display: none;
+}
+
+.nojs > .contact__picturemap {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+
+  @media (min-width: $tablet) {
+    min-height: 374px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 502px;
+    text-align: center;
+  }
 }

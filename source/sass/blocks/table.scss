@@ -28,6 +28,10 @@
 .table__label {
   @include font-options(16px, 30px, bold, $menu-color);
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
 }
 
 .table__label span {
@@ -37,6 +41,10 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
   }
 }
 
@@ -91,7 +99,7 @@
   position: relative;
 }
 
-.table__item--best {
+.table__item--best span:first-of-type {
   position: absolute;
   top: 0;
   left: 0;
@@ -110,7 +118,7 @@
   }
 }
 
-.table__item--best::before {
+.table__item--best span:first-of-type::before {
   content: "Хит";
   position: absolute;
   width: 150%;

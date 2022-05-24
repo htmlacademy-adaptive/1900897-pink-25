@@ -141,7 +141,7 @@
   }
 }
 
-.form__note--desctop {
+.form__note span {
   display: none;
 
   @media (min-width: $desktop) {

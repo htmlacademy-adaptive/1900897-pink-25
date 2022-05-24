@@ -1,19 +1,18 @@
 .rate {
   width: 100%;
-  height: 480px;
   background-color: $tabel-back;
   position: relative;
   top: 3px;
+  padding-top: 104px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet) {
     top: 6px;
-    padding: 99px 20px;
-    height: 384px;
+    padding: 99px 20px 69px;
   }
 
   @media (min-width: $desktop) {
-    padding: 157px 130px;
-    height: 532px;
+    padding: 157px 130px 92px;
   }
 }
 
