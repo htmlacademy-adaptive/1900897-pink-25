@@ -226,7 +226,7 @@
 }
 
 .photo-filter__fill > .photo-filter__range-slider {
-  top: 39px;
+  top: 40px;
   left: -99px;
 
   @media (min-width: $tablet) {
@@ -243,8 +243,8 @@
 }
 
 .photo-filter__contrast > .photo-filter__range-slider {
-  top: 45px;
-  left: -182px;
+  top: 51px;
+  left: -179px;
 
   @media (min-width: $tablet) {
     width: 202px;
@@ -282,7 +282,7 @@
 }
 
 .photo-filter__fill > .photo-filter__active-segment {
-  top: 30px;
+  top: 31px;
   left: -20px;
 
   @media (min-width: $tablet) {
@@ -297,7 +297,7 @@
 }
 
 .photo-filter__contrast > .photo-filter__active-segment {
-  top: 37px;
+  top: 42px;
   left: -180px;
 
   @media (min-width: $tablet) {

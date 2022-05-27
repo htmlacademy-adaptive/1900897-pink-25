@@ -55,18 +55,18 @@
       <h1 class="form-page__title visually-hidden">Заполните форму для участия в конкурсе</h1>
       <p class="form-page__description">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</p>
     </div>
-    <form class="form-page__form form" method="post" action="https://echo.htmlacademy.ru">
+    <form class="form-page__form form" id="bigform" method="post" action="https://echo.htmlacademy.ru" novalidate>
       <p class="form__purpose">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
       <section class="form__user-name user-name">
         <h2 class="user-name__title visually-hidden">Имя участника</h2>
         <p class="user-name__info user-info">
           <label class="user-info__label" for="surname">Фамилия:</label>
-          <input class="user-info__input" type="text" name="user-surname" placeholder="Укажите фамилию*" id="surname" required>
+          <input class="user-info__input required" type="text" name="user-surname" placeholder="Укажите фамилию*" id="surname" required>
         </p>
         <p class="user-name__info user-info">
           <label class="user-info__label" for="name">Имя:</label>
-          <input class="user-info__input" type="text" name="user-name" placeholder="Введите ваше имя*" id="name" required>
+          <input class="user-info__input required" type="text" name="user-name" placeholder="Введите ваше имя*" id="name" required>
         </p>
         <p class="user-name__info user-info">
           <label class="user-info__label" for="patronymic">Отчество:</label>
@@ -82,38 +82,38 @@
           <ul class="filter__list">
             <li class="filter__item">
               <label>
-                <input class="flilter__input" type="checkbox" name="selfie-with-shark" value="filter-selfie-with-shark" checked>
-                <span class="flilter__checkbox">Сделал селфи с акулой</span>
+                <input class="filter__input" type="checkbox" name="selfie-with-shark" value="filter-selfie-with-shark" checked>
+                <span class="filter__checkbox">Сделал селфи с акулой</span>
               </label>
             </li>
             <li class="filter__item">
               <label>
-                <input class="flilter__input" type="checkbox" name="burned-on-beach" value="filter-burned-on-beach" checked>
-                <span class="flilter__checkbox">Обгорел на пляже</span>
+                <input class="filter__input" type="checkbox" name="burned-on-beach" value="filter-burned-on-beach" checked>
+                <span class="filter__checkbox">Обгорел на пляже</span>
               </label>
             </li>
             <li class="filter__item">
               <label>
-                <input class="flilter__input" type="checkbox" name="saw-chuck-norris" value="filter-saw-chuck-norris">
-                <span class="flilter__checkbox">Видел Чака Норриса</span>
+                <input class="filter__input" type="checkbox" name="saw-chuck-norris" value="filter-saw-chuck-norris">
+                <span class="filter__checkbox">Видел Чака Норриса</span>
               </label>
             </li>
             <li class="filter__item">
               <label>
-                <input class="flilter__input" type="checkbox" name="bought-souvenirs" value="filter-bought-souvenirs">
-                <span class="flilter__checkbox">Накупил сувениров</span>
+                <input class="filter__input" type="checkbox" name="bought-souvenirs" value="filter-bought-souvenirs">
+                <span class="filter__checkbox">Накупил сувениров</span>
               </label>
             </li>
             <li class="filter__item">
               <label>
-                <input class="flilter__input" type="checkbox" name="held-tower" value="filter-held-tower" checked>
-                <span class="flilter__checkbox">Удержал башню</span>
+                <input class="filter__input" type="checkbox" name="held-tower" value="filter-held-tower" checked>
+                <span class="filter__checkbox">Удержал башню</span>
               </label>
             </li>
             <li class="filter__item">
               <label>
-                <input class="flilter__input" type="checkbox" name="trashed-hotel" value="filter-trashed-hotel">
-                <span class="flilter__checkbox">Разгромил отель</span>
+                <input class="filter__input" type="checkbox" name="trashed-hotel" value="filter-trashed-hotel">
+                <span class="filter__checkbox">Разгромил отель</span>
               </label>
             </li>
           </ul>
@@ -128,14 +128,14 @@
             <legend class="user-contacts__legend visually-hidden">Ваши контакты</legend>
             <p class="user-contacts__info user-contacts__phone user-info">
               <label class="user-info__label" for="telephone">Номер телефона</label>
-              <input class="user-info__input user-info__input--icon" type="tel" name="user-surname" placeholder="Номер, пожалуйста" id="telephone">
+              <input class="user-info__input user-info__input--icon" type="tel" name="user-phone" placeholder="Номер, пожалуйста" id="telephone">
               <svg class="user-info__phone" width="20" height="19">
                 <use xlink:href="img/sprite.svg#phone-icon"></use>
               </svg>
             </p>
             <p class="user-contacts__info user-contacts__mail user-info">
               <label class="user-info__label" for="e-mail">Адрес почты</label>
-              <input class="user-info__input user-info__input--icon" type="email" pattern="^[A-Za-z0-9\_.%+-]+@[A-Za-z0-9\.-]+\.[a-z]{2, 4}$" name="user-surname" id="e-mail" placeholder="Введите почту*" required>
+              <input class="user-info__input user-info__input--icon required" type="email" pattern="^[A-Za-z0-9\_.%+-]+@[A-Za-z0-9\.-]+\.[a-z]{2, 4}$" name="user-mail" id="e-mail" placeholder="Введите почту*" required>
               <svg class="user-info__mail" width="18" height="13">
                 <use xlink:href="img/sprite.svg#mail-icon"></use>
               </svg>
@@ -189,7 +189,7 @@
       </div>
     </form>
 
-    <div class="form-page__popup popup popup__content--error visually-hidden">
+    <div class="form-page__popup popup popup--error">
       <div class="popup__body">
         <div class="popup__content">
           <h2 class="popup__title">Что-то пошло не так!</h2>
@@ -199,7 +199,7 @@
       </div>
     </div>
 
-    <section class="form-page__popup popup">
+    <div class="form-page__popup popup popup--confirm">
       <div class="popup__body">
         <div class="popup__content popup__content--confirm">
           <h2 class="popup__title">Ваша заявка отправлена</h2>
@@ -207,7 +207,7 @@
           <button class="button button--form popup__button">Закрыть окно</button>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="page__footer footer">
