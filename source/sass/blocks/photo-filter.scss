@@ -190,34 +190,34 @@
 
   @media (min-width: $desktop) {
     width: 288px;
-    top: 20px;
+    top: 16px;
     left: 92px;
   }
 }
 
 .photo-filter__input--crop:checked + .photo-filter__crop {
   @media (min-width: $tablet) {
-    top: -27px;
+    top: -26px;
   }
 
   @media (min-width: $desktop) {
-    top: -49px;
+    top: -46px;
   }
 }
 
 .photo-filter__input--fill:checked + .photo-filter__fill {
   @media (min-width: $tablet) {
-    top: -27px;
+    top: -24px;
   }
 
   @media (min-width: $desktop) {
-    top: -48px;
+    top: -44px;
   }
 }
 
 .photo-filter__input--contrast:checked + .photo-filter__contrast {
   @media (min-width: $tablet) {
-    top: -22px;
+    top: -20px;
   }
 
   @media (min-width: $desktop) {
@@ -276,7 +276,7 @@
   }
 
   @media (min-width: $desktop) {
-    top: 12px;
+    top: 8px;
     left: 326px;
   }
 }

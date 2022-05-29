@@ -16,14 +16,7 @@ burgerToggle.forEach(function (item) {
 
 map.classList.remove('nojs');
 
-let youtube = document.querySelector(".social__link--youtube");
-
-youtube.addEventListener ("click", function(evt) {
-    evt.preventDefault();
-    console.log("Работает!");
-  }
-)
-
+//В доработке
 let popup = document.querySelectorAll(".popup");
 let error = document.querySelector(".popup--error");
 let confirm = document.querySelector(".popup--confirm");
@@ -32,18 +25,10 @@ let required = document.querySelectorAll(".required");
 const form = document.getElementById("bigform");
 
 form.addEventListener("submit", function(evt) {
-  if (required.value === "") {        //условие
-    error.addEventListener("submit", function(evt) {
-      evt.preventDefault();
-      error.classList.add(".popup-show");
-    });
-  } else {
-    confirm.addEventListener("submit", function(evt) {
-      evt.preventDefault();   //нужно ли отменять отправку, если я хочу отправить данные, но не переключаться со страницы?
-      confirm.classList.add(".popup-show");
-    });
+  evt.preventDefault();
+  console.log("Работает!");
   }
-});
+);
 
 //закрытие popup
 close.addEventListener("click", function(evt){
